@@ -1,0 +1,18 @@
+{
+  "width": 300,
+  "height": 300,
+  "data": {
+    "values": [
+      {"Area": "North", "Sales": 5, "Profit": 2},
+      {"Area": "East", "Sales": 25, "Profit": 8},
+      {"Area": "West", "Sales": 15, "Profit": 6},
+      {"Area": "South", "Sales": 20, "Profit": 5},
+      {"Area": "Central", "Sales": 10, "Profit": 3}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Area", "type": "nominal"},
+    "y": {"field": "Sales", "type": "quantitative"}
+  }
+}
