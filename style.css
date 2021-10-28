@@ -1,21 +1,21 @@
 /* 
-   One Way to Write it
+   One Way to write it
     margin-top: 20px
     margin-right: 40px
     margin-bottom: 20px
     margin-left: 40px
 
-   2nd Way to Write it
+   2nd Way to write it
     margin: 20px 40px 20px 40px;
 
-   3rd Way to Wrtie it
+   3rd Way to write it
     margin: 20px 40px; 
 
-   4th Way (if the margin is similiar)
+   4th Way (if all the margin is similiar)
    margin: 20px;
 
 
-  How to target in CSS
+  How to target html in CSS
    tag e.g. h1, p, header, main
    #id e.g. #inspire
    .class e.g. .card, .flex-container
@@ -49,6 +49,7 @@ h2 {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
