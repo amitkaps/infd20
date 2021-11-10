@@ -12,13 +12,13 @@ body {
 }
 
 header,
-main {
+main, footer {
   margin: 0;
   padding: 50px 20px;
 }
 
 h1,
-h2 {
+h2, small {
   display: flex;
   justify-content: center;
 }
