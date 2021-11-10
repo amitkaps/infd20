@@ -51,7 +51,7 @@
       "axis": {
         "tickCount": 5
       },
-      "title": "Price of a gallon of Gasoline"
+      "title": "Miles driven per capita year"
     },
     "y": {
       "field": "gas",
@@ -64,7 +64,7 @@
         "format": "$0.2f",
         "labelOffset": 4
       },
-      "title": "Miles driven per capita year"
+      "title": "Price of a gallon of Gasoline"
     },
     "order": {
       "field": "year",
