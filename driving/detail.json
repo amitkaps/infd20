@@ -1,0 +1,263 @@
+{
+  "data": {
+    "url": "dataGroups.json"
+  },
+  "hconcat": [
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "lightgrey"
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "black"
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "type",
+                "equal": "Cheap Gas"
+              }
+            }
+          ]
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "title": "Cheap Gas",
+      "encoding": {
+        "x": {
+          "field": "miles",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "gas",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "order": {
+          "field": "year",
+          "type": "Q"
+        }
+      }
+    },
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "lightgrey"
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "black"
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "type",
+                "equal": "Arab Embargo"
+              }
+            }
+          ]
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "title": "Arab Embargo",
+      "encoding": {
+        "x": {
+          "field": "miles",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "gas",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "order": {
+          "field": "year",
+          "type": "Q"
+        }
+      }
+    },
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "lightgrey"
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "black"
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "type",
+                "equal": "Energy Crisis"
+              }
+            }
+          ]
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "title": "Energy Crisis",
+      "encoding": {
+        "x": {
+          "field": "miles",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "gas",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "order": {
+          "field": "year",
+          "type": "Q"
+        }
+      }
+    },
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "lightgrey"
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "black"
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "type",
+                "equal": "Low Prices"
+              }
+            }
+          ]
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "title": "Low Prices",
+      "encoding": {
+        "x": {
+          "field": "miles",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "gas",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "order": {
+          "field": "year",
+          "type": "Q"
+        }
+      }
+    },
+    {
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "lightgrey"
+          }
+        },
+        {
+          "mark": {
+            "type": "line",
+            "interpolate": "cardinal",
+            "stroke": "black"
+          },
+          "transform": [
+            {
+              "filter": {
+                "field": "type",
+                "equal": "Swing Backward"
+              }
+            }
+          ]
+        }
+      ],
+      "width": 160,
+      "height": 160,
+      "title": "Swing Backward",
+      "encoding": {
+        "x": {
+          "field": "miles",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "gas",
+          "type": "Q",
+          "scale": {
+            "zero": false
+          }
+        },
+        "order": {
+          "field": "year",
+          "type": "Q"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "domain": false,
+      "labels": false,
+      "ticks": false,
+      "title": false
+    }
+  }
+}

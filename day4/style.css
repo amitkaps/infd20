@@ -1,3 +1,27 @@
+/* 
+   One Way to write it
+    margin-top: 20px
+    margin-right: 40px
+    margin-bottom: 20px
+    margin-left: 40px
+
+   2nd Way to write it
+    margin: 20px 40px 20px 40px;
+
+   3rd Way to write it
+    margin: 20px 40px; 
+
+   4th Way (if all the margin is similiar)
+   margin: 20px;
+
+
+  How to target html in CSS
+   tag e.g. h1, p, header, main
+   #id e.g. #inspire
+   .class e.g. .card, .flex-container
+
+  */
+
 * {
   box-sizing: border-box;
   /* outline: 1px red solid; */

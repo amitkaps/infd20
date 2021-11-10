@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Embedding Vega-Lite</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1000px;
+      font-family: system-ui, sans-serif;
+      font-size: 16px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 330px);
+      grid-template-rows: repeat(10, 100px);
+    }
+
+    header {
+      grid-row: 1;
+      grid-column: 1;
+      z-index: 1;
+    }
+
+    .overview {
+      grid-row: 2;
+      grid-column: 1;
+      z-index: 0;
+    }
+
+    .detail {
+      grid-row: 8;
+      grid-column: auto;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-style: italic;
+      background-color: white;
+      margin-left: 50px;
+    }
+
+    .lead {
+      columns: 2;
+      max-width: 400px;
+      font-size: 8px;
+      background-color: white;
+      margin-left: 50px;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Driving Shifts in Reverse</h1>
+      <p class="lead">ECONOMISTS have long studied the relationship between driving habits and gasoline prices. Low gas
+        prices can bring periods of profligate driving, and a quick jump in prices can cause many vehicles to languish
+        in garages. Until recently, Americans have driven more each year than the previous one, with a few brief
+        exceptions. In 1956, Americans of driving age drove about 4,000 miles a year, on average. Fifty years later,
+        that figure had climbed above 10,000. But the latest recession has caused some big changes. High unemployment
+        meant that tewer people were driving to work, and a slump in consumer spending meant that less freight needed to
+        be moved around
+        the country. As gas prices soared in 2005, the number of miles driven - including commercial and personal• began
+        to fall, and continued to drop after 2008 even as gasoline became cheaper: "People were surprised by the very
+        rapid rise in gas prices, and they changed their driving behavior," said Kenneth A. Small, a transportation
+        economist at the University of California, Irvine. "But my suspicion is that it is temporary. As soon as
+        unemployment gets back to pre-recession levels, we will see Americans doing a lot less driving again."</p>
+    </header>
+    <section class="overview">
+      <figure id="overview"></figure>
+    </section>
+    <section class="detail">
+      <figure id="detail"></figure>
+    </section>
+  </main>
+  <script type="text/javascript">
+    vegaEmbed('#overview', "overview.json");
+    vegaEmbed('#detail', "detail.json");
+  </script>
+</body>
+
+</html>

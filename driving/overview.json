@@ -1,0 +1,92 @@
+{
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "dataGroups.json"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "cardinal",
+        "strokeWidth": 3,
+        "stroke": "black"
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "fill": "white",
+        "stroke": "black",
+        "strokeWidth": 2,
+        "size": 60,
+        "opacity": 1
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": {
+          "expr": "datum.align"
+        },
+        "baseline": {
+          "expr": "datum.baseline"
+        },
+        "dx": {
+          "expr": "datum.dx"
+        },
+        "dy": {
+          "expr": "datum.dy"
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "miles",
+      "type": "Q",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "tickCount": 5
+      },
+      "title": "Price of a gallon of Gasoline"
+    },
+    "y": {
+      "field": "gas",
+      "type": "Q",
+      "scale": {
+        "zero": false
+      },
+      "axis": {
+        "tickCount": 5,
+        "format": "$0.2f",
+        "labelOffset": 4
+      },
+      "title": "Miles driven per capita year"
+    },
+    "order": {
+      "field": "year",
+      "type": "Q"
+    },
+    "text": {
+      "field": "year",
+      "type": "Q"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "domain": false,
+      "labelFontSize": 13,
+      "labelFontStyle": "bold",
+      "titleFontSize": 16
+    },
+    "title": {
+      "fontSize": 30
+    }
+  }
+}
